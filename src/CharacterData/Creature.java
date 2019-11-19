@@ -2,9 +2,9 @@
 package CharacterData;
 
 import EffectData.StatusEffect;
+import ThingData.Thing;
 
-public class Creature {
-    private String name;
+public class Creature extends Thing{
     private double hp;
     private double maxHp;
     private int speed;
@@ -13,7 +13,7 @@ public class Creature {
 
     //Constructor
     public Creature(String name, double maxHp, int speed, int accuracy){
-        this.name = name;
+        super(name);
         this.maxHp = maxHp;
         hp = maxHp;
         this.speed = speed;
@@ -77,10 +77,6 @@ public class Creature {
         return status;
     }
     
-    public String getName(){
-        return name;
-    }
-    
     //Setters
     public void setMaxHP(double maxHp){
         this.maxHp = maxHp;
@@ -100,9 +96,5 @@ public class Creature {
     
     public void setStatus(StatusEffect status){
         this.status = status;
-    }
-    
-    public void setName(String name){
-        this.name = name;
     }
 }

@@ -5,7 +5,6 @@ import EffectData.StatusEffect;
 import ItemData.ArmorData.Armor;
 import ItemData.WeaponData.Weapon;
 import ItemData.WeaponData.RangedWeapon;
-import basicrpg.*;
 import ItemData.*;
 import SpellData.*;
 import java.util.ArrayList;
